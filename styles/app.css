@@ -1,7 +1,16 @@
 /* BEGIN (write your solution here) */
 @font-face {
-	
+	font-weight: 400;
+	font-family: "Raleway";
+	src: url("../assets/fonts/Raleway-Regular.ttf");
 }
+
+@font-face {
+	font-weight: 700;
+	font-family: "Raleway";
+	src: url("../assets/fonts/Raleway-Bold.ttf");
+}
+
 /* END */
 
 body {
@@ -14,7 +23,8 @@ body {
 	color: #eee;
 
 	/* BEGIN (write your solution here) */
-	
+	font-family: "Raleway" 20px/1.5 sans-serif;
+
 	/* END */
 
 	background-image: linear-gradient(to right top, #222831, #282d36, #2d333b, #333841, #393e46);
