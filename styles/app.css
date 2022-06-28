@@ -92,13 +92,29 @@ a:focus {
 	column-gap: 30px;
 }
 
-a[data-tab="html"]:hover + div[data-tab-content="html"] {
+a[data-tab="html"]:hover ~ .tabs-content > div[data-tab-content="html"] {
 	display: block;
 }
 
-/* .tabs-content-item:focus {
+a[data-tab="css"]:hover ~ .tabs-content > div[data-tab-content="css"] {
 	display: block;
-} */
+}
+
+a[data-tab="js"]:hover ~ .tabs-content > div[data-tab-content="js"] {
+	display: block;
+}
+
+a[data-tab="html"]:focus ~ .tabs-content > div[data-tab-content="html"] {
+	display: block;
+}
+
+a[data-tab="css"]:focus ~ .tabs-content > div[data-tab-content="css"] {
+	display: block;
+}
+
+a[data-tab="js"]:focus ~ .tabs-content > div[data-tab-content="js"] {
+	display: block;
+}
 
 /* END */
 
