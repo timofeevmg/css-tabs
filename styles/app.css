@@ -1,13 +1,13 @@
 /* BEGIN (write your solution here) */
 @font-face {
 	font-weight: 400;
-	font-family: "Raleway";
+	font-family: Raleway;
 	src: url("../assets/fonts/Raleway-Regular.ttf");
 }
 
 @font-face {
 	font-weight: 700;
-	font-family: "Raleway";
+	font-family: Raleway;
 	src: url("../assets/fonts/Raleway-Bold.ttf");
 }
 
@@ -23,7 +23,7 @@ body {
 	color: #eee;
 
 	/* BEGIN (write your solution here) */
-	font-family: "Raleway" 20px/1.5 sans-serif;
+	font: 20px/1.5 Raleway, sans-serif;
 
 	/* END */
 
@@ -54,12 +54,51 @@ h2 {
 	margin: 0 auto;
 
 	/* BEGIN (write your solution here) */
-	
+	column-count: 3;
+	column-gap: 0;
+
 	/* END */
 }
 
 /* BEGIN (write your solution here) */
+.tab-name {
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	text-align: center;
+	break-inside: avoid-column;
+	background-color: #00adb5;
+}
 
+a:hover {
+	border-bottom: 3px solid #5ffbf1;
+}
+
+a:focus {
+	border-bottom: 3px solid #5ffbf1;
+}
+
+.tabs-content {
+	column-span: all;
+
+	background-color: #393e46;
+}
+
+.tabs-content-item {
+	display: none;
+	padding: 20px;
+
+	column-count: 3;
+	column-gap: 30px;
+}
+
+a[data-tab="html"]:hover + div[data-tab-content="html"] {
+	display: block;
+}
+
+/* .tabs-content-item:focus {
+	display: block;
+} */
 
 /* END */
 
